@@ -34,7 +34,7 @@ body {
 }
 .banner-title-container p{
   font-size:14px;
-  font-weight: bold;
+  font-weight:900;
 }
 .banner-img{
     width: 30%;
@@ -60,7 +60,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 40%;
+  width: 37%;
   height: 270px;
   background: #009246;
   z-index: 0; /* 🔥 detrás */
@@ -101,7 +101,7 @@ nav a{
     text-decoration: none;
     color: #FCFCFC;
     font-size: 0.9rem;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .data-div {
@@ -127,6 +127,7 @@ nav a{
 .adress-div p{
     margin: 0;
     font-size: 14px;
+    font-weight:900;
 }
 .adress-div i{
     color: #CE2B37;
@@ -196,7 +197,7 @@ height: 100px
 li{
     list-style: none;
     font-size: 0.85rem;
-    font-weight: bold;
+    font-weight: 900;
     margin-top: 10px;
 }
 .test-card-container{
@@ -286,5 +287,5 @@ li{
     margin: 0 auto;
     font-size: 0.85rem;
     width: 80%;
-    font-weight: bold;
+    font-weight: 900;
 }
