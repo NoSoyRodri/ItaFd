@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+/* Para todo el sitio */
+body {
+  font-family: 'Quattrocento', serif;
+}
+
+.banner-section{
+    background-color: #FCFCFC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    align-items: center;
+    
+    min-width: 100%;
+    overflow: hidden;
+    height: 220px;
+}
+.banner-title-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    
+}
+.banner-title-container h1{
+  font-size: 1.1rem; /*4 rem opera*/
+  text-align: start;
+}
+.banner-title-container p{
+  font-size:14px;
+  font-weight: bold;
+}
+.banner-img{
+    width: 30%;
+    background-image: url("pizza.jpg");
+    background-size: 111%;   /* 🔥 hace zoom */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content:start;
+    border-radius: 50%;
+    margin-top: -3rem;
+    box-shadow: 
+    15px 0 10px rgba(0,0,0,0.1),   /* derecha */
+   -15px 0 10px rgba(0,0,0,0.1),   /* izquierda */
+    0 15px 10px rgba(0,0,0,0.1);   /* abajo */
+    z-index: 2;
+    transform: translateX(5%);
+}
+
+.banner-deco {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 270px;
+  background: #009246;
+  z-index: 0; /* 🔥 detrás */
+  border-bottom-left-radius: 300px
+}
+.header{
+    display: flex;
+    justify-content: end;
+    background-color: #CE2B37;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+}
+.header-name{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color:#FCFCFC;
+    width: 25%;
+    position: absolute;          /* saca el h4 del flujo normal */
+    left: 20px;                  /* lo pega al borde izquierdo */
+    color: #FCFCFC;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header-name h4{
+    font-size: 20px;
+}
+.header nav{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+nav a{
+    padding: 0px;
+    text-decoration: none;
+    color: #FCFCFC;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.data-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 🔥 uno a la izquierda y otro a la derecha */
+    align-items: start;
+    transform: translateY(80%);
+    width: 100%;   /* que ocupe todo el ancho del contenedor */
+}
+
+.adress-div{
+    display: flex;
+    align-items: center;
+}
+.social-div{
+    display: flex;
+    align-items:center;
+    gap: 8px;
+    color: #333;
+    font-size: 1rem;
+}
+.adress-div p{
+    margin: 0;
+    font-size: 14px;
+}
+.adress-div i{
+    color: #CE2B37;
+    font-size: 20px;
+}
+.social-div a {
+    color: #CE2B37;
+    text-decoration: none;
+}
+.social-div i{
+    font-size: 20px;
+}
+
+.test-section{
+    background-color: #FCFCFC;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    background: linear-gradient(
+        to bottom,      
+        #FCFCFC 50%,    
+        #009246 50%   
+        );
+        /* clip-path: ellipse(95% 100% at 50% 0%);
+        padding-top: .5rem;*/
+    }
+    .test-section-title h2{
+        width: 100%;
+        padding:2rem 0rem 3.5rem 0rem;
+        font-size: 0.9rem;
+    }
+.test-card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 2px solid #CE2B37;
+width: 115px;
+min-height: 250px;
+background-color: #FCFCFC;
+}
+.test-img{
+     overflow: hidden;
+     background-image: url("pizza.jpg");
+    background-size: 110%;
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+        background-position: center;
+        transform: translateY(-70%);
+}
+.test-text-container{
+    text-align: center;
+}
+.test-text-container h3{
+transform: translateY(-200%);
+font-size: 1rem;
+color: #009246;
+}
+.test-text-container ul{
+transform: translateY(-20%);
+height: 100px
+}
+li{
+    list-style: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.test-card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.test-section-title h2{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+
+.pizza-name {
+    position: absolute;
+    position: absolute;
+    top: 55%;              /* se mueve al 50% vertical */
+    left: 50%;             /* se mueve al 50% horizontal */
+    transform: translate(-50%, -50%);  /* centra perfectamente */
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;              /* ocupa todo el ancho del círculo */
+    white-space: nowrap;      /* evita que el texto se divida en varias líneas */
+    overflow: hidden;         /* opcional: corta lo que no cabe */
+    text-overflow: ellipsis;  /* pone "..." si el texto es muy largo */
+    padding: 2px 0;
+}
+
+.services-section{
+    height: 350px;
+    background-color: #FCFCFC;
+
+
+}
+.services-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 3rem;
+}
+.services-title h3{
+    color: #000000;
+  font-size: .9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.services-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 150px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.services-card{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 160px;
+    background-color: #FCFCFC;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-i{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 0 auto;
+    color: #009246;
+    
+}
+.card-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 0.85rem;
+    width: 80%;
+    font-weight: bold;
+}
