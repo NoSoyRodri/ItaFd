@@ -34,7 +34,7 @@ body {
 }
 .banner-title-container p{
   font-size:14px;
-  font-weight:900;
+  font-weight: bold;
 }
 .banner-img{
     width: 30%;
@@ -101,7 +101,7 @@ nav a{
     text-decoration: none;
     color: #FCFCFC;
     font-size: 0.9rem;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .data-div {
@@ -127,7 +127,6 @@ nav a{
 .adress-div p{
     margin: 0;
     font-size: 14px;
-    font-weight:900;
 }
 .adress-div i{
     color: #CE2B37;
@@ -197,7 +196,7 @@ height: 100px
 li{
     list-style: none;
     font-size: 0.85rem;
-    font-weight: 900;
+    font-weight: bold;
     margin-top: 10px;
 }
 .test-card-container{
@@ -246,7 +245,7 @@ li{
     padding: 3rem;
 }
 .services-title h3{
-    color: #000000;
+  color: #000000;
   font-size: .9rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -282,10 +281,10 @@ li{
 }
 .card-p{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     margin: 0 auto;
     font-size: 0.85rem;
     width: 80%;
-    font-weight: 900;
+    font-weight: bold;
 }
